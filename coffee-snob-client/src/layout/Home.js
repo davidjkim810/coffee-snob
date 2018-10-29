@@ -6,9 +6,10 @@ const Home = () => {
   return (
     <div className="home">
       <div className="welcome">
-        <h2>Planning Your Next Brunch?</h2>
-        <span className="welcome-text">Find restaurant recommendations in your area!</span>
-        <Link to="/restaurants">
+        <h2>Are you craving good coffee?</h2>
+        <span className="welcome-text">Visit the most delicious coffee spots near you!</span>
+        <Link to="/cafes">
+        <br/><br/>
             <button className="btn btn-md btn-danger">
               Get Started
             </button>
