@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
-    binding.pry
+    @comment.cafe = @cafe
     if @comment.save
       render json: @comment
     end
@@ -30,6 +30,6 @@ class CommentsController < ApplicationController
   end
 
   def set_cafe
-    @cafe = Cafe.find_by(id: params[:cafe_id])
+    @cafe = Cafe.find(params[:cafe_id])
   end
 end
