@@ -3,6 +3,7 @@ import React from 'react';
 const CafesCreate = () => {
   return (
     <div className="container">
+    this is the create component
     </div>
   )
 }
