@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './layout/NavBar';
+import Home from './layout/Home';
+import Footer from './layout/Footer';
+import CafesCreate from './components/CafesCreate';
+import CafesShow from './components/CafesShow';
+import CafesIndex from './components/CafesIndex';
 
 class App extends Component {
   render() {
