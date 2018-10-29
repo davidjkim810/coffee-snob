@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-class Navbar extends Component {
+class NavBar extends Component {
   render() {
 
     return (
@@ -43,7 +43,7 @@ class Navbar extends Component {
            <div className="collapse navbar-collapse" id="navbarNav">
              <ul className="navbar-nav ml-auto">
                <li className="nav-item">
-                 <NavLink className="nav-link" to="/">
+                 <NavLink className="nav-link" to="/new">
                    Add Coffee Shop
                  </NavLink>
                </li>
@@ -56,4 +56,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavBar;
