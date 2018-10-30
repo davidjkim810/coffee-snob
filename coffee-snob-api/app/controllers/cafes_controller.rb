@@ -11,6 +11,7 @@ class CafesController < ApplicationController
   end
 
   def create
+    binding.pry
     @cafe = Cafe.new(cafe_params)
     if @cafe.save
       render json: @cafe

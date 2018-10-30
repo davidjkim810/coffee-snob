@@ -8,7 +8,7 @@ class CafesContainer extends Component {
   render() {
     return (
       <div>
-        <CafesCreate />
+        <CafesForm />
         <CafesIndex cafes={this.props.cafes} />
       </div>
     )
@@ -19,4 +19,5 @@ const mapStateToProps = state = ({
   cafes: state.cafes
 })
 
+})
 export default connect(mapStateToProps)(CafesContainer);

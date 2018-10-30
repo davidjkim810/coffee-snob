@@ -5,7 +5,7 @@ import './App.css';
 import NavBar from './layout/NavBar';
 import Home from './layout/Home';
 import Footer from './layout/Footer';
-import CafesCreate from './components/CafesCreate';
+import CafesForm from './components/CafesForm';
 import CafesShow from './components/CafesShow';
 import CafesIndex from './components/CafesIndex';
 
@@ -17,7 +17,7 @@ class App extends Component {
           <NavBar />
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/new" component={CafesCreate} />
+              <Route exact path="/new" component={CafesForm} />
               <Route exact path="/cafes" component={CafesIndex} />
               <Route path="/cafes/:cafeId" component={CafesShow} />
             </Switch>
