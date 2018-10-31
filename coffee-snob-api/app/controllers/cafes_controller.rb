@@ -11,10 +11,11 @@ class CafesController < ApplicationController
   end
 
   def create
-    binding.pry
     @cafe = Cafe.new(cafe_params)
     if @cafe.save
       render json: @cafe
+    else
+      render json: {status: 'ERROR', message:'Cafe not saved', data: @cafe.errors}, status: :unprocessable_entry
     end
   end
 

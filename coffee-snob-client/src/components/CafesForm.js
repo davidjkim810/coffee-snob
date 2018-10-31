@@ -27,14 +27,12 @@ class CafesForm extends Component {
 
   handleOnSubmit(event){
     event.preventDefault();
-    debugger
     this.props.createCafe(this.state)
-    this.props.history.push('/cafes')
   }
 
   render(){
     return (
-      <div className="restaurant-form">
+      <div className="cafe-form">
         <h5>Add a Coffee Spot</h5>
         <form onSubmit={(event) => this.handleOnSubmit(event)} >
           <FormGroup>
@@ -99,6 +97,7 @@ class CafesForm extends Component {
               value={this.state.image_url}
               onChange={(event)=> this.handleOnChange(event)}
             />
+            <br />
 
             <button className="btn btn-sm btn-dark" type="submit">Submit</button>
 

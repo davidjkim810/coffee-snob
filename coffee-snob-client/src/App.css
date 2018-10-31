@@ -45,3 +45,13 @@
     transform: rotate(360deg);
   }
 }
+
+.cafe-form {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #D3D3D3;
+  margin-top: 35px;
+  padding: 25px;
+  font-size: 0.9em;
+  background-color: white;
+}
