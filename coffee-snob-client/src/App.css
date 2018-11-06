@@ -56,14 +56,13 @@
   background-color: white;
 }
 
-
-
 .cafe-card {
-  width: 300px;
+  width: 450px;
   border: 1px solid #D3D3D3;
+  display: block;
   margin-top: 35px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px;
   background-color: white;
 }
