@@ -6,7 +6,7 @@ import NavBar from './layout/NavBar';
 import Home from './layout/Home';
 import Footer from './layout/Footer';
 import CafesForm from './components/CafesForm';
-import CafesShow from './components/CafesShow';
+import CafesShow from './containers/CafesShow';
 import CafesIndex from './components/CafesIndex';
 import CafesContainer from './containers/CafesContainer';
 

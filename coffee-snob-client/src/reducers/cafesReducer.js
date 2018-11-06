@@ -1,4 +1,9 @@
-export default (state = [], action) => {
+const initialState = {
+  cafes: [],
+  cafe: {}
+}
+
+export default (state = initialState, action) => {
   switch(action.type){
     case 'NEW_CAFE':
       return {
@@ -9,6 +14,11 @@ export default (state = [], action) => {
       return {
         ...state,
         cafes: action.payload
+      }
+    case 'FETCH_CAFE':
+      return {
+        ...state,
+        cafe: action.payload
       }
     default:
     return state;

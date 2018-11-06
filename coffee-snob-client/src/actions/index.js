@@ -15,7 +15,6 @@ export const createCafe = (cafeData) => dispatch => {
     }));
   };
 
-
 export const fetchCafes = () => dispatch => {
   fetch('http://localhost:3001/api/cafes')
     .then(res => res.json())
