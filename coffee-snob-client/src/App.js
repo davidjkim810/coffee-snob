@@ -8,6 +8,7 @@ import Footer from './layout/Footer';
 import CafesForm from './components/CafesForm';
 import CafesShow from './components/CafesShow';
 import CafesIndex from './components/CafesIndex';
+import CafesContainer from './containers/CafesContainer';
 
 class App extends Component {
   render() {
@@ -18,7 +19,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/new" component={CafesForm} />
-              <Route exact path="/cafes" component={CafesIndex} />
+              <Route exact path="/cafes" component={CafesContainer} />
               <Route path="/cafes/:cafeId" component={CafesShow} />
             </Switch>
           <Footer />

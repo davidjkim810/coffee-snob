@@ -14,3 +14,14 @@ export const createCafe = (cafeData) => dispatch => {
       payload: cafe
     }));
   };
+
+
+export const fetchCafes = () => dispatch => {
+  fetch('http://localhost:3001/api/cafes')
+    .then(res => res.json())
+    .then(cafes => dispatch({
+      type: 'FETCH_CAFES',
+      payload: cafes
+    }))
+
+}
