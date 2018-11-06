@@ -15,6 +15,8 @@ class CafesShow extends React.Component {
           <h3 className="cafe-header">{this.props.cafe.name}</h3>
           <div className="cafe-body">
           </div>
+          <div className="bottom-border">
+          </div>
         </div>
       </div>
     )

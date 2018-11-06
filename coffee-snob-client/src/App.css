@@ -101,3 +101,7 @@
   padding: 15px;
   background-color: white;
 }
+
+.bottom-border {
+  border-bottom: 1px solid black;
+}
