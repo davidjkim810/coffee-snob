@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class CafesCard extends React.Component {
 
@@ -7,7 +7,7 @@ class CafesCard extends React.Component {
     return (
       <div className="cafe-card">
         <div className="container-fluid text-center">
-          <h5 className="cafe-header">{this.props.cafe.name}</h5>
+          <h5 className="cafe-header"><NavLink key={this.props.cafe.id}  to={`/cafes/${this.props.cafe.id}`}>{this.props.cafe.name}</NavLink></h5>
           {this.props.cafe.image_url ? <img src={this.props.cafe.image_url} width="500" height="400" alt="pic" /> : <img src='http://cs.pes.edu/wp-content/uploads/2016/06/default-1.jpg' width="500" height="400" alt="pic" /> }
 
 

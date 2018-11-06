@@ -84,3 +84,20 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.price-range-selector {
+  text-align: center;
+}
+
+/* CAFE SHOW */
+
+.cafe-show {
+  width: 600px;
+  border: 1px solid #D3D3D3;
+  display: block;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background-color: white;
+}

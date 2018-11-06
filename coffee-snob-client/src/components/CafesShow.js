@@ -1,11 +1,19 @@
 import React from 'react';
 
-const CafesShow = () => {
-  return (
-    <div className="container">
-      this is the cafe show component
-    </div>
-  )
+class CafesShow extends React.Component {
+  render(){
+    debugger
+    return (
+      <div className="cafe-show">
+        <div className="container-fluid">
+          <h3 className="cafe-header"></h3>
+          <div className="cafe-body">
+
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default CafesShow;
