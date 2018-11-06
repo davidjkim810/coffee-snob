@@ -23,5 +23,13 @@ export const fetchCafes = () => dispatch => {
       type: 'FETCH_CAFES',
       payload: cafes
     }))
+}
 
+export const fetchCafe = (cafeId) => dispatch => {
+  fetch(`http://localhost:3001/api/cafes/${cafeId}`)
+    .then(res => res.json())
+    .then(cafe => dispatch ({
+      type: 'FETCH_CAFE',
+      payload: cafe
+    }))
 }

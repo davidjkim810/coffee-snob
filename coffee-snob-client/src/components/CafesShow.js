@@ -2,7 +2,7 @@ import React from 'react';
 
 class CafesShow extends React.Component {
   render(){
-    debugger
+
     return (
       <div className="cafe-show">
         <div className="container-fluid">
