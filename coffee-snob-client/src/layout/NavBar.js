@@ -34,7 +34,7 @@ class NavBar extends Component {
              <ul className="navbar-nav ml-auto">
                <li className="nav-item">
                  <NavLink className="nav-link" to="/cafes">
-                   Find Coffee Shop
+                   Coffee Shops
                  </NavLink>
                </li>
              </ul>

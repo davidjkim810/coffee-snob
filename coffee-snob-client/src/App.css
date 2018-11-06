@@ -46,6 +46,14 @@
   }
 }
 
+
+/* CAFE FORM */
+
+.cafe-form-header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .cafe-form {
   width: 40%;
   margin: auto;
@@ -57,7 +65,7 @@
 }
 
 .cafe-card {
-  width: 450px;
+  width: 600px;
   border: 1px solid #D3D3D3;
   display: block;
   margin-top: 35px;
@@ -68,6 +76,11 @@
 }
 
 .cafe-card img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cafe-header {
   padding-top: 5px;
   padding-bottom: 5px;
 }

@@ -5,9 +5,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      this is the home component
       <div className="welcome">
-        <h2>Are you craving good coffee?</h2>
+        <h2>Need a good cup of coffee?</h2>
         <span className="welcome-text">Visit the most delicious coffee spots near you!</span>
         <Link to="/cafes">
         <br/><br/>

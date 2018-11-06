@@ -33,7 +33,7 @@ class CafesForm extends Component {
   render(){
     return (
       <div className="cafe-form">
-        <h5>Add a Coffee Spot</h5>
+        <h5 className="cafe-form-header">Add Coffee Shop</h5>
         <form onSubmit={(event) => this.handleOnSubmit(event)} >
           <FormGroup>
             <ControlLabel>Cafe Name:</ControlLabel>
