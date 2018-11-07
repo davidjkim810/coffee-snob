@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #E5E5E8;
 }
 
 .App-logo {
@@ -66,7 +67,7 @@
 
 .cafe-card {
   width: 600px;
-  border: 1px solid #D3D3D3;
+  border: 3px solid gray;
   display: block;
   margin-top: 35px;
   margin-left: auto;
@@ -76,13 +77,14 @@
 }
 
 .cafe-card img {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .cafe-header {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 .price-range-selector {
@@ -93,13 +95,18 @@
 
 .cafe-show {
   width: 600px;
-  border: 1px solid #D3D3D3;
+  border: 3px solid gray;
   display: block;
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
   background-color: white;
+}
+
+.cafe-show img {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bottom-border {
