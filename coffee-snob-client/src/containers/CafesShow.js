@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchCafe } from '../actions'
+import CommentsIndex from '../components/CommentsIndex';
 import { connect } from 'react-redux'
 
 
@@ -25,7 +26,8 @@ class CafesShow extends React.Component {
           <div className="bottom-border">
           </div>
 
-          
+          <CommentsIndex cafe={this.props.match.params.cafeId}/>
+
 
         </div>
       </div>

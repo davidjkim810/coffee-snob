@@ -41,3 +41,18 @@ export const fetchComments = (cafeId) => dispatch => {
       payload: comments
     }))
 }
+
+export const createComment = (commentData, cafeId) => dispatch => {
+  fetch(`http://localhost:3001/api/cafes/${cafeId}/comments`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: JSON.stringify(commentData)
+  })
+    .then(res => res.json())
+    .then(comment => dispatch({
+      type: 'ADD_COMMENT',
+      payload: comment
+    }))
+}
