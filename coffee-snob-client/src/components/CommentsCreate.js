@@ -5,11 +5,10 @@ import { FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
 
 class CommentsCreate extends Component {
   constructor(){
-    super(props)
+    super()
     this.state = {
       content: '',
-      commenter: '',
-      cafe_id: ''
+      commenter: ''
     }
   }
 
@@ -17,22 +16,22 @@ class CommentsCreate extends Component {
       this.setState({
         [event.target.name]: event.target.value
       });
-
-    }
+  }
 
   handleOnSubmit(event){
     event.preventDefault();
-    this.props.createComment(this.state)
+    this.props.createComment(this.state, this.props.cafe)
+    this.setState({
+      content: '',
+      commenter: ''
+    })
   }
 
-  componentDidMount(){
-    
-  }
 
   render() {
     return (
       <div className="comment-form">
-        <h7 className="comment-form-header">New Comment</h7>
+        <h6 className="comment-form-header"></h6>
         <form onSubmit={(event) => this.handleOnSubmit(event)}>
           <FormGroup>
 
@@ -46,7 +45,7 @@ class CommentsCreate extends Component {
 
             <ControlLabel>Comment:</ControlLabel>
             <FormControl
-              type="text"
+              type="textarea"
               name="content"
               value={this.state.content}
               onChange={(event)=> this.handleOnChange(event)}

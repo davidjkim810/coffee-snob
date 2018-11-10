@@ -1,13 +1,16 @@
 import React from 'react';
 import { fetchCafe } from '../actions'
+import { fetchComments } from '../actions'
 import CommentsIndex from '../components/CommentsIndex';
 import { connect } from 'react-redux'
+import CommentsCreate from '../components/CommentsCreate';
 
 
 class CafesShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchCafe(this.props.match.params.cafeId)
+    this.props.fetchComments(this.props.match.params.cafeId)
   }
   render(){
     return (
@@ -26,8 +29,8 @@ class CafesShow extends React.Component {
           <div className="bottom-border">
           </div>
 
-          <CommentsIndex cafe={this.props.match.params.cafeId}/>
-
+          <CommentsIndex cafe={this.props.match.params.cafeId} comments={this.props.comments}/>
+          <CommentsCreate cafe={this.props.match.params.cafeId}/>
 
         </div>
       </div>
@@ -41,4 +44,4 @@ class CafesShow extends React.Component {
       comments: state.comments
     }
   }
-export default connect(mapStateToProps, {fetchCafe})(CafesShow);
+export default connect(mapStateToProps, {fetchCafe, fetchComments})(CafesShow);
